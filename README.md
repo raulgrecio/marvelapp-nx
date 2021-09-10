@@ -4,11 +4,10 @@ Code testing for iOS and Android using [Marvel API](https://developer.marvel.com
 
 ## Screenshot
 
-<img src="./promo/android1.png" data-canonical-src="./promo/android1.png" height="460" />
-<img src="./promo/ios1.png" data-canonical-src="./promo/android1.png" height="460" />
-<br />
-<img src="./promo/android2.png" data-canonical-src="./promo/android2.png" height="460" />
-<img src="./promo/ios2.png" data-canonical-src="./promo/ios2.png" height="460" />
+| android 	| ios 	| 
+|---	|---	|
+| <img src="./promo/android1.png" data-canonical-src="./promo/android1.png" height="460" /> 	|  <img src="./promo/ios1.png" data-canonical-src="./promo/ios1.png" height="460" />	| 
+| <img src="./promo/android2.png" data-canonical-src="./promo/android2.png" height="460" /> 	|  <img src="./promo/ios2.png" data-canonical-src="./promo/ios2.png" height="460" />	|  
 
 <br/>
 
