@@ -1,0 +1,167 @@
+{
+  "version": 2,
+  "projects": {
+    "marvel-app": {
+      "root": "apps/marvel-app",
+      "sourceRoot": "apps/marvel-app/src",
+      "projectType": "application",
+      "targets": {
+        "start": {
+          "executor": "@nrwl/react-native:start",
+          "options": {
+            "port": 8081
+          }
+        },
+        "serve": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "nx start marvel-app"
+          }
+        },
+        "run-ios": {
+          "executor": "@nrwl/react-native:run-ios",
+          "options": {}
+        },
+        "bundle-ios": {
+          "executor": "@nrwl/react-native:bundle",
+          "outputs": ["apps/marvel-app/build"],
+          "options": {
+            "entryFile": "apps/marvel-app/src/main.tsx",
+            "platform": "ios",
+            "bundleOutput": "dist/apps/marvel-app/ios/main.bundle"
+          }
+        },
+        "run-android": {
+          "executor": "@nrwl/react-native:run-android",
+          "options": {}
+        },
+        "build-android": {
+          "executor": "@nrwl/react-native:build-android",
+          "outputs": [
+            "apps/marvel-app/android/app/build/outputs/bundle",
+            "apps/marvel-app/android/app/build/outputs/apk"
+          ],
+          "options": {}
+        },
+        "bundle-android": {
+          "executor": "@nrwl/react-native:bundle",
+          "options": {
+            "entryFile": "apps/marvel-app/src/main.tsx",
+            "platform": "android",
+            "bundleOutput": "dist/apps/marvel-app/android/main.bundle"
+          }
+        },
+        "sync-deps": {
+          "executor": "@nrwl/react-native:sync-deps",
+          "options": {}
+        },
+        "ensure-symlink": {
+          "executor": "@nrwl/react-native:ensure-symlink",
+          "options": {}
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/marvel-app/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/marvel-app"],
+          "options": {
+            "jestConfig": "apps/marvel-app/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "marvel-models": {
+      "root": "libs/marvel/models",
+      "sourceRoot": "libs/marvel/models/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/marvel/models/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/marvel/models"],
+          "options": {
+            "jestConfig": "libs/marvel/models/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "marvel-services": {
+      "root": "libs/marvel/services",
+      "sourceRoot": "libs/marvel/services/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/marvel/services/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/marvel/services"],
+          "options": {
+            "jestConfig": "libs/marvel/services/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "marvel-store": {
+      "root": "libs/marvel/store",
+      "sourceRoot": "libs/marvel/store/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/marvel/store/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/marvel/store"],
+          "options": {
+            "jestConfig": "libs/marvel/store/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "marvel-ui-app": {
+      "root": "libs/marvel/ui-app",
+      "sourceRoot": "libs/marvel/ui-app/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/marvel/ui-app/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/marvel/ui-app"],
+          "options": {
+            "jestConfig": "libs/marvel/ui-app/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "defaultCollection": "@nrwl/react-native"
+  },
+  "defaultProject": "marvel-app"
+}

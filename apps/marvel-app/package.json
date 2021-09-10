@@ -1,0 +1,26 @@
+{
+  "name": "marvel-app",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "react-native": "*",
+    "react": "*",
+    "@testing-library/react-native": "*",
+    "@testing-library/jest-native": "*",
+    "@testing-library/jest-dom": "*",
+    "@react-navigation/native": "*",
+    "@react-navigation/native-stack": "*",
+    "react-native-safe-area-context": "*",
+    "react-native-screens": "*",
+    "react-redux": "*",
+    "axios": "*",
+    "redux-saga": "*",
+    "crypto-js": "*",
+    "@reduxjs/toolkit": "*",
+    "redux-logger": "*",
+    "react-native-fast-image": "*",
+    "react-native-linear-gradient": "*",
+    "react-native-vector-icons": "*",
+    "redux-devtools-extension": "*"
+  }
+}
