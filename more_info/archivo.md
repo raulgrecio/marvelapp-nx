@@ -29,6 +29,7 @@ Why use Typescript?
 
 Nx is a smart and extensible build framework to help you architect, test, and build at any scale — integrating seamlessly with modern technologies and libraries while providing a robust CLI, caching, dependency management, and more.
 In addition to native applications, it is possible to share business logic with web applications that also use React.
+
 For more information see [Nx Readme](./Nx.md)
 
 ### Pattern
