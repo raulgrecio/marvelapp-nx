@@ -34,15 +34,16 @@ const Item = memo(
     character,
     height,
     aspectRation = 'standard',
-    size = 'large',
+    size = 'xlarge',
   }: ItemProps) => {
+    const { width } = useWindowDimensions();
+
     const uri = formatUriMarvel({
       path: character.thumbnail.path,
       extension: character.thumbnail.extension,
       aspectRation,
       size,
     });
-    const { width } = useWindowDimensions();
 
     const { realname, surname } = splitCharacterName(character.name);
 
