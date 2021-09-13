@@ -21,6 +21,27 @@
     "react-native-fast-image": "*",
     "react-native-linear-gradient": "*",
     "react-native-vector-icons": "*",
-    "redux-devtools-extension": "*"
+    "redux-devtools-extension": "*",
+    "@nrwl/tao": "*",
+    "@nrwl/cli": "*",
+    "tslib": "*",
+    "@nrwl/workspace": "*",
+    "eslint": "*",
+    "typescript": "*",
+    "@typescript-eslint/eslint-plugin": "*",
+    "@nrwl/linter": "*",
+    "detox": "*",
+    "@nrwl/jest": "*",
+    "prettier": "*",
+    "jest": "*",
+    "metro-resolver": "*",
+    "@nrwl/detox": "*",
+    "@react-native-community/cli-platform-android": "*",
+    "metro": "*",
+    "metro-react-native-babel-preset": "*",
+    "react-test-renderer": "*",
+    "@react-native-community/cli": "*",
+    "@react-native-community/cli-platform-ios": "*",
+    "react-native-codegen": "*"
   }
 }

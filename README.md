@@ -1,13 +1,13 @@
 # MarvelApp
 
-Code testing for iOS and Android using [Marvel API](https://developer.marvel.com/docs). With **Typescript**, **Redux**, **Sagas**, **Redux-toolkit**, **React-navigation v6** as core technologies for React-Native and developed with the [Nx](https://nx.dev/) monorepo
+Code testing for iOS and Android using [Marvel API](https://developer.marvel.com/docs). With **Typescript**, **Redux**, **Sagas**, **Redux-toolkit**, **React-navigation v6** as core technologies for React-Native and developed with the Nx monorepo
 
 ## Screenshot
 
-| android 	| ios 	| 
-|---	|---	|
-| <img src="./promo/android1.png" data-canonical-src="./promo/android1.png" height="460" /> 	|  <img src="./promo/ios1.png" data-canonical-src="./promo/ios1.png" height="460" />	| 
-| <img src="./promo/android2.png" data-canonical-src="./promo/android2.png" height="460" /> 	|  <img src="./promo/ios2.png" data-canonical-src="./promo/ios2.png" height="460" />	|  
+| android                                                                                   | ios                                                                               |
+| ----------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| <img src="./promo/android1.png" data-canonical-src="./promo/android1.png" height="460" /> | <img src="./promo/ios1.png" data-canonical-src="./promo/ios1.png" height="460" /> |
+| <img src="./promo/android2.png" data-canonical-src="./promo/android2.png" height="460" /> | <img src="./promo/ios2.png" data-canonical-src="./promo/ios2.png" height="460" /> |
 
 <br/>
 
@@ -48,6 +48,8 @@ $ yarn nx run-ios
 # for android
 $ yarn nx run-android
 ```
+
+The first time it runs on iOS as on Android it may fail, when installing the native libraries. Just run it again and it will work again.
 
 to start the test, execute
 
